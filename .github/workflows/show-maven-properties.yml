@@ -4,6 +4,8 @@ jobs:
   demo-maven-properties:
     runs-on: ubuntu-latest
     steps:
+      - name: Install JDK 21
+        run: sudo apt install openjdk-21-jdk
       - name: Install Maven 3
         run: |
           mkdir -p ~/temp ~/test-bin
