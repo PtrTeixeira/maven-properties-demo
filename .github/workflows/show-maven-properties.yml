@@ -21,4 +21,4 @@ jobs:
           ln -s apache-maven-4.0.0-rc-1/bin/mvn ~/test-bin/mvn4
           ~/test-bin/mvn4 --version
       - name: Checkout repository
-        uses: action/checkout@v4
+        uses: actions/checkout@v4
