@@ -5,7 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install JDK 21
-        run: sudo apt install openjdk-21-jdk
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
       - name: Install Maven 3
         run: |
           mkdir -p ~/temp ~/test-bin
