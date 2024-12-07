@@ -29,8 +29,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Evaluate properties with Maven 3 (non-recursive)
         run: |
-          ~/temp-bin/mvn3 -pl core-module help:evaluate -Dexpression="basepom.gpg.use-agent"
+          ~/test-bin/mvn3 -pl core-module help:evaluate -Dexpression="basepom.gpg.use-agent"
       - name: Evaluate properties with Maven 4 (non-recursive)
-        run: ~/temp-bin/mvn4 -pl core-module help:evaluate -Dexpression="basepom.gpg.use-agent"
+        run: ~/test-bin/mvn4 -pl core-module help:evaluate -Dexpression="basepom.gpg.use-agent"
       - name: Evaluate properties with Maven 4 (recursive)
-        run: ~/temp-bin/mvn4 -am -pl core-module help:evaluate -Dexpression="basepom.gpg.use-agent"
+        run: ~/test-bin/mvn4 -am -pl core-module help:evaluate -Dexpression="basepom.gpg.use-agent"
