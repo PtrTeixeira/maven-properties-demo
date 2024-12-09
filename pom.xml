@@ -21,6 +21,6 @@
   </modules>
 
   <properties>
-    <basepom.gpg.use-agent>false</basepom.gpg.use-agent>
+    <basepom.test.skip>false</basepom.test.skip>
   </properties>
 </project>
