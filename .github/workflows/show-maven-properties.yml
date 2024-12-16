@@ -21,9 +21,9 @@ jobs:
         run: |
           mkdir -p ~/temp ~/test-bin
           cd ~/temp
-          wget https://dlcdn.apache.org/maven/maven-4/4.0.0-rc-1/binaries/apache-maven-4.0.0-rc-1-bin.tar.gz -O maven4.tgz
+          wget https://repository.apache.org/content/repositories/maven-2256/org/apache/maven/apache-maven/4.0.0-rc-2/apache-maven-4.0.0-rc-2-bin.tar.gz  -O maven4.tgz
           tar xvf maven4.tgz
-          ln -s $PWD/apache-maven-4.0.0-rc-1/bin/mvn $HOME/test-bin/mvn4
+          ln -s $PWD/apache-maven-4.0.0-rc-2/bin/mvn $HOME/test-bin/mvn4
           ~/test-bin/mvn4 --version
       - name: Checkout repository
         uses: actions/checkout@v4
